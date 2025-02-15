@@ -6,6 +6,7 @@ A simple DPDK Layer 2 (Ethernet) forwarder application written in C language whi
 - Forward valid packets to the appropriate interface.
 - Provide console output for packet statistics.
 - Implement logging for debugging purposes.
+Please find the detail guide of this application here: https://doc.dpdk.org/guides/sample_app_ug/l2_forward_real_virtual.html
 
 # Environment Setup
 1. VirtualBox with Ubuntu 24.04 Guest (4GB RAM, 4 Processor Cores, 40 GB Storage space and 3 Network Interfaces)
