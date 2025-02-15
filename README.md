@@ -22,6 +22,8 @@ Please find the detail guide of this application here: https://doc.dpdk.org/guid
    - "dpdk-devbind.py --noiommu-mode --bind=vfio-pci enp0s9" where enp0s8 enp0s9 are the two network interfaces to be configured with dpdk.
    - To check current status of Ethernet devices:
    "dpdk/user-tools/dpdk-devbind.py --status"
+![image](https://github.com/user-attachments/assets/53767fb3-c8e1-4e6f-b4cc-abeee15ad62e)
+
 
 # How to Compile and Run the application
 1. Compile command:
@@ -32,4 +34,11 @@ Please find the detail guide of this application here: https://doc.dpdk.org/guid
    - "cd /build/examples"
    - "sudo ./dpdk-l2fwd -l 0-1 -n 4 -- -q 2 -p 3"
 where we specified the first two processor cores, 4 memry channels, 2 queues per processor core, and 2 ethernet ports
+Here are the debug logs of the application:
+![image](https://github.com/user-attachments/assets/9222abcb-48a3-4d3d-8c7b-c325925e6e9c)
+
+Here are the traffic statistics logged by the application:
+![image](https://github.com/user-attachments/assets/49047357-27a4-46d2-958a-ceaa8e0cd450)
+
+
  
