@@ -26,9 +26,9 @@ A simple DPDK Layer 2 (Ethernet) forwarder application written in C language whi
 1. Compile command:
    - "sudo meson setup -Dexamples=l2fwd dpdk build"
    where "l2fwd" is the example dpdk application, "dpdk" is the dpdk source directory and "build" is the output dir.
-- "sudo meson compile -C build" 
+   - "sudo meson compile -C build" 
 2. To run the application: 
-- "cd /build/examples"
-- "sudo ./dpdk-l2fwd -l 0-1 -n 4 -- -q 2 -p 3"
+   - "cd /build/examples"
+   - "sudo ./dpdk-l2fwd -l 0-1 -n 4 -- -q 2 -p 3"
 where we specified the first two processor cores, 4 memry channels, 2 queues per processor core, and 2 ethernet ports
  
